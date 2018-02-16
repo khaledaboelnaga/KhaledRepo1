@@ -1,0 +1,23 @@
+$ cd /c/users/reda/desktop/khaledsprint0
+$ git init
+$ git add "file1.txt"
+$ git add "file2.txt"
+$ git add "file3.txt"
+$ git rm "file2.txt"
+$ git commit -m "save"
+$ git revert HEAD
+$ git add .
+$ git commit -m "commiting the files"
+$ git remote add origin https://github.com/khaledaboelnaga/KhaledRepo1.git
+$ git push -u origin master
+$ echo "# Sprint0" >> README.md
+$ echo "The reop has 3 text files that contains content from a book" >> README.md
+$ echo "Khaled Aboelnaga 37-9343"
+$ echo "book Chacon, Scott, and Ben Straub. Pro Git. Apress,2014 " >> README.md
+$ git checkout -b ReadMe
+$ git add README.md
+$ git commit -m "readme.md in readme branch"
+$ git push --set-upstream origin ReadMe
+$ git merge master
+$ git checkout master
+$ git merge ReadMe
